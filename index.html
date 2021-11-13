@@ -25,10 +25,10 @@
                 Add word:
               </div>
               <div class="col-auto">
-                <input type="password" class="form-control" id="inputPassword2">
+                <input type="text" class="form-control" id="getWord">
               </div>
               <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-3"><i class="bi bi-plus-circle"></i> Add word</button>
+                <button type="submit" class="btn btn-primary mb-3" onclick="addWord()"><i class="bi bi-plus-circle"></i> Add word</button>
               </div>
             </form>
           </li>
@@ -38,14 +38,18 @@
                   Search word:
                 </div>
                 <div class="col-auto">
-                  <input type="password" class="form-control" id="inputPassword2">
+                  <input type="text" class="form-control" id="checkWord">
                 </div>
                 <div class="col-auto">
-                  <button type="submit" class="btn btn-warning mb-3"><i class="bi bi-search"></i> Search word</button>
+                  <button type="submit" class="btn btn-warning mb-3" onclick="searchWord()"><i class="bi bi-search"></i> Search word</button>
                 </div>
               </form>
             </li>
           </ul>
+          <br>
+          <div class="col-auto">
+          <button type="submit" class="btn btn-warning mb-3" style="width: 12rem;" onclick="resetDictionary()"><i class="bi bi-eraser-fill"></i> Reset Dictionary</button>
+        </div>
         </div>
     </center>
     </div>
